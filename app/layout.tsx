@@ -2,18 +2,18 @@ import type React from "react"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Arjun V L - AI Developer ",
+  title: "Alex Chen - AI Developer & Researcher",
   description:
-    "Portfolio of ARJUN V L, an AI developer specializing in Natural Language Processing and Computer Vision .",
+    "Portfolio of Alex Chen, an AI developer and researcher specializing in machine learning and natural language processing.",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
     { media: "(prefers-color-scheme: dark)", color: "#020617" },
   ],
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -26,6 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="portfolio-theme">
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

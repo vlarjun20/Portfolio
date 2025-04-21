@@ -8,6 +8,7 @@ import { ParticleBackground } from "@/components/particle-background"
 import { FloatingIcons } from "@/components/floating-icons"
 import { AnimatedGradient } from "@/components/animated-gradient"
 import { TechPattern } from "@/components/tech-pattern"
+import { ContactForm } from "@/components/Contact-Form"
 
 export default function Portfolio() {
   return (
@@ -582,6 +583,7 @@ export default function Portfolio() {
           </div>
         </section>
 
+       
         {/* Contact Section */}
         <section id="contact" className="py-16">
           <div className="flex items-center gap-2 mb-8">
@@ -623,49 +625,7 @@ export default function Portfolio() {
                 <CardDescription className="text-slate-400">I'll get back to you as soon as possible.</CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Name
-                      </label>
-                      <input
-                        id="name"
-                        className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Email
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium">
-                      Subject
-                    </label>
-                    <input
-                      id="subject"
-                      className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={4}
-                      className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                    ></textarea>
-                  </div>
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700">Send Message</Button>
-                </form>
+                <ContactForm />
               </CardContent>
             </Card>
           </div>
