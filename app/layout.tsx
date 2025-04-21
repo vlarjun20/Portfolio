@@ -7,9 +7,9 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Alex Chen - AI Developer & Researcher",
+  title: "Arjun V L Portfolio",
   description:
-    "Portfolio of Alex Chen, an AI developer and researcher specializing in machine learning and natural language processing.",
+    "Portfolio of Arjun V L, an AI developer specializing in machine learning and natural language processing.",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
     { media: "(prefers-color-scheme: dark)", color: "#020617" },

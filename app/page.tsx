@@ -70,13 +70,18 @@ export default function Portfolio() {
             processing. Passionate about building intelligent systems that solve real-world problems.
           </p>
           <div className="flex gap-4">
-            <Button className="bg-purple-600 hover:bg-purple-700">
-              <Mail className="mr-2 h-4 w-4" /> Contact Me
-            </Button>
-            <Button variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
-              <Github className="mr-2 h-4 w-4" /> GitHub
-            </Button>
-          </div>
+  <Link href="mailto:vlarjun2022@gmail.com">
+    <Button className="bg-purple-600 hover:bg-purple-700">
+      <Mail className="mr-2 h-4 w-4" /> Contact Me
+    </Button>
+  </Link>
+  
+  <Link href="https://github.com/vlarjun20" target="_blank">
+    <Button variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
+      <Github className="mr-2 h-4 w-4" /> GitHub
+    </Button>
+  </Link>
+</div>
         </section>
 
         {/* About Section */}
@@ -199,7 +204,7 @@ export default function Portfolio() {
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
     <img
-      src="/placeholder.svg?height=300&width=600"
+      src="/sentiment voice.svg"
       alt="Sentiment Analysis of Incoming Calls"
       className="w-full object-cover"
     />
@@ -243,7 +248,7 @@ export default function Portfolio() {
 
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Sentimatrix" className="w-full object-cover" />
+    <img src="/sentimat.webp" alt="Sentimatrix" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -312,7 +317,7 @@ export default function Portfolio() {
       </div>
     </div>
     <CardDescription className="text-slate-400">
-      Collaborated on the official landing page for Velammal EC
+      Collaborated on the official landing page for Velammal Engineering College
     </CardDescription>
   </CardHeader>
   <CardContent>
@@ -327,7 +332,7 @@ export default function Portfolio() {
   </CardContent>
 </Card>
 
-<Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
+{/* <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
     <img src="/placeholder.svg" alt="VEC Backend" className="w-full object-cover" />
   </div>
@@ -354,7 +359,7 @@ export default function Portfolio() {
       <Badge variant="outline" className="text-purple-400 border-purple-400">Backend</Badge>
     </div>
   </CardContent>
-</Card>
+</Card> */}
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
     <img src="/placeholder.svg" alt="Wildlife Conservation Tool" className="w-full object-cover" />
@@ -602,18 +607,18 @@ export default function Portfolio() {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-purple-500" />
-                  <span className="text-slate-300">alex.chen@example.com</span>
+                  <span className="text-slate-300">vlarjun2022@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-purple-500" />
-                  <Link href="#" className="text-slate-300 hover:text-purple-400">
-                    linkedin.com/in/alexchen
+                  <Link href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/" className="text-slate-300 hover:text-purple-400">
+                  linkedin.com/in/arjun-vanmeeganathan-lakshmi
                   </Link>
                 </div>
                 <div className="flex items-center gap-3">
                   <Github className="h-5 w-5 text-purple-500" />
-                  <Link href="#" className="text-slate-300 hover:text-purple-400">
-                    github.com/alexchen
+                  <Link href="https://github.com/vlarjun20" className="text-slate-300 hover:text-purple-400">
+                  github.com/vlarjun20
                   </Link>
                 </div>
               </CardContent>
@@ -635,15 +640,15 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-slate-400">© 2024 Alex Chen. All rights reserved.</p>
+          <p className="text-slate-400">© 2025 Arjun V L. All rights reserved.</p>
           <div className="flex justify-center gap-4 mt-4">
-            <Link href="#" className="text-slate-400 hover:text-purple-400">
+            <Link href="https://github.com/vlarjun20" className="text-slate-400 hover:text-purple-400">
               <Github className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-slate-400 hover:text-purple-400">
+            <Link href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/" className="text-slate-400 hover:text-purple-400">
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-slate-400 hover:text-purple-400">
+            <Link href="mailto:vlarjun2022@gmail.com" className="text-slate-400 hover:text-purple-400">
               <Mail className="h-5 w-5" />
             </Link>
           </div>
