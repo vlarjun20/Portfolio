@@ -204,7 +204,7 @@ export default function Portfolio() {
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
     <img
-      src="/sentiment voice.svg"
+      src="/sentiment voice2.png"
       alt="Sentiment Analysis of Incoming Calls"
       className="w-full object-cover"
     />
@@ -277,7 +277,7 @@ export default function Portfolio() {
 
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Agri-Hub" className="w-full object-cover" />
+    <img src="/agri_new2.jpg" alt="Agri-Hub" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -303,13 +303,15 @@ export default function Portfolio() {
     </div>
   </CardContent>
 </Card>
+
+
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="VEC Landing Page" className="w-full object-cover" />
+    <img src="/VEC1.jpg" alt="VEC Landing Page" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
-      <CardTitle>VEC Landing Page</CardTitle>
+      <CardTitle>VEC Website</CardTitle>
       <div className="flex gap-2">
         <Link href="https://github.com/SAMSDP/VEC_Landing" className="text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
@@ -325,8 +327,8 @@ export default function Portfolio() {
       Worked as a contributor on a clean and accessible landing page for Velammal Engineering College with sections for news, achievements, and departmental links.
     </p>
     <div className="flex flex-wrap gap-2">
-      <Badge variant="outline" className="text-purple-400 border-purple-400">HTML/CSS</Badge>
-      <Badge variant="outline" className="text-purple-400 border-purple-400">Bootstrap</Badge>
+      <Badge variant="outline" className="text-purple-400 border-purple-400">React</Badge>
+      <Badge variant="outline" className="text-purple-400 border-purple-400">Node.js</Badge>
       <Badge variant="outline" className="text-purple-400 border-purple-400">Web Design</Badge>
     </div>
   </CardContent>
@@ -362,7 +364,7 @@ export default function Portfolio() {
 </Card> */}
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Wildlife Conservation Tool" className="w-full object-cover" />
+    <img src="/wildlife.png" alt="Wildlife Conservation Tool" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -390,7 +392,7 @@ export default function Portfolio() {
 </Card>
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Digital Character Recognition" className="w-full object-cover" />
+    <img src="/digi.png" alt="Digital Character Recognition" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -418,7 +420,7 @@ export default function Portfolio() {
 </Card>
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Sentiment Analysis - Product Reviews" className="w-full object-cover" />
+    <img src="/senti12.png" alt="Sentiment Analysis - Product Reviews" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -446,7 +448,7 @@ export default function Portfolio() {
 </Card>
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Gesture-based App Launcher" className="w-full object-cover" />
+    <img src="/hand-gesture12.png" alt="Gesture-based App Launcher" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -474,7 +476,7 @@ export default function Portfolio() {
 </Card>
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Power Circle" className="w-full object-cover" />
+    <img src="/save.jpg" alt="Power Circle" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -502,7 +504,7 @@ export default function Portfolio() {
 </Card>
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Invoice Generator" className="w-full object-cover" />
+    <img src="/inv.jpg" alt="Invoice Generator" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -530,7 +532,7 @@ export default function Portfolio() {
 </Card>
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Credit Card Fraud Detection" className="w-full object-cover" />
+    <img src="/cred.jpg" alt="Credit Card Fraud Detection" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
@@ -558,7 +560,7 @@ export default function Portfolio() {
 </Card>
 <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
   <div className="h-48 overflow-hidden">
-    <img src="/placeholder.svg" alt="Learning Hub" className="w-full object-cover" />
+    <img src="/learn1.png" alt="Learning Hub" className="w-full object-cover" />
   </div>
   <CardHeader>
     <div className="flex justify-between items-start">
