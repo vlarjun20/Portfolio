@@ -9,6 +9,7 @@ import { FloatingIcons } from "@/components/floating-icons"
 import { AnimatedGradient } from "@/components/animated-gradient"
 import { TechPattern } from "@/components/tech-pattern"
 import { ContactForm } from "@/components/Contact-Form"
+import { ResumeButton} from "@/components/resume"
 
 export default function Portfolio() {
   return (
@@ -40,12 +41,7 @@ export default function Portfolio() {
             <div className="flex items-center">
               <ThemeToggle />
             </div>
-            <Button
-              variant="outline"
-              className="border-purple-500 text-purple-500 dark:text-purple-400 hover:bg-purple-500/10"
-            >
-              Resume
-            </Button>
+            <ResumeButton />
           </div>
         </nav>
       </header>
