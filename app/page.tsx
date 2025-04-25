@@ -11,6 +11,7 @@ import { TechPattern } from "@/components/tech-pattern"
 import { ContactForm } from "@/components/Contact-Form"
 import { ResumeButton} from "@/components/resume"
 
+
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 text-slate-800 dark:text-slate-100 relative overflow-hidden">
@@ -23,7 +24,7 @@ export default function Portfolio() {
             <Brain className="h-6 w-6 text-purple-500" />
             <span className="font-bold text-xl">AVL</span>
           </div>
-          <div className="hidden md:flex gap-6">
+          <div className="hidden md:flex gap-6 ">
             <Link href="#about" className="hover:text-purple-400 transition-colors">
               About
             </Link>
