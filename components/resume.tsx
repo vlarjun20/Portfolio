@@ -3,7 +3,6 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
 
 interface ResumeButtonProps {
   resumePath?: string
@@ -22,7 +21,6 @@ export function ResumeButton({ resumePath = "/resume/arjun_resume.pdf", classNam
       onMouseLeave={() => setIsHovered(false)}  
     >
       <Link href={resumePath} target="_blank" rel="noopener noreferrer" >
-        {isHovered ? <Download className="mr-2 h-4 w-4" /> : null}
         Resume
       </Link>
     </Button>

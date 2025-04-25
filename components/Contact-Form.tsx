@@ -76,7 +76,7 @@ export function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full px-3 py-2 dark:bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
         <div className="space-y-2">
@@ -90,7 +90,7 @@ export function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full px-3 py-2 dark:bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
       </div>
@@ -104,7 +104,7 @@ export function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full px-3 py-2 dark:bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
         />
       </div>
       <div className="space-y-2">
@@ -118,7 +118,7 @@ export function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
-          className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full px-3 py-2 dark:bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
         ></textarea>
       </div>
       <Button type="submit" className="w-full bg-purple-600 hover:bg-purple-700" disabled={isSubmitting}>

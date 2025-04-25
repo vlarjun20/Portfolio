@@ -61,7 +61,7 @@ export default function Portfolio() {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Arjun V L</h1>
           <h2 className="text-2xl md:text-3xl text-purple-400 mb-6">AI Developer</h2>
-          <p className="max-w-2xl text-slate-300 mb-8">
+          <p className="max-w-2xl dark:text-slate-300 mb-8">
             Computer Science student specializing in artificial intelligence, machine learning, and natural language
             processing. Passionate about building intelligent systems that solve real-world problems.
           </p>
@@ -88,17 +88,17 @@ export default function Portfolio() {
                 <User className="h-6 w-6 text-purple-500" />
                 <h2 className="text-3xl font-bold">About Me</h2>
               </div>
-              <p className="text-slate-300 mb-4">
+              <p className="dark:text-slate-300 mb-4">
                 I'm a final-year Computer Science student at Velammal Engineering College, specializing in Artificial
                 Intelligence and Deep Learning. My academic journey has been focused on developing intelligent
                 systems that can understand, learn, and adapt.
               </p>
-              <p className="text-slate-300 mb-4">
+              <p className="dark:text-slate-300 mb-4">
                 During my studies, I've had the opportunity to work on various projects in natural language
                 processing, computer vision, and reinforcement learning. I'm particularly interested in the intersection
                 of AI and healthcare, where I believe technology can make a significant positive impact.
               </p>
-              <p className="text-slate-300">
+              <p className="dark:text-slate-300">
                 When I'm not coding or researching, you can find me participating in hackathons, contributing to
                 open-source projects, or exploring the latest developments in the AI community.
               </p>
@@ -110,7 +110,7 @@ export default function Portfolio() {
                   <span className="font-medium">Velammal Engineering College</span>
                   <span className="text-purple-400">2022 - 2026</span>
                 </div>
-                <p className="text-sm text-slate-400">B.tech in Artificial Intelligence and Data Science</p>
+                <p className="text-sm dark:text-slate-400">B.tech in Artificial Intelligence and Data Science</p>
               </div>
 
               <h3 className="text-xl font-semibold mb-4">Experience</h3>
@@ -119,7 +119,7 @@ export default function Portfolio() {
                   <span className="font-medium">ML & Robotics Intern</span>
                   <span className="text-purple-400">December 2024</span>
                 </div>
-                <p className="text-sm text-slate-400">Atlanwa, Chennai</p>
+                <p className="text-sm dark:text-slate-400">Atlanwa, Chennai</p>
               </div>
               {/* <div className="mb-4">
                 <div className="flex justify-between mb-1">
@@ -211,7 +211,7 @@ export default function Portfolio() {
       <div className="flex gap-2">
         <Link
           href="https://github.com/vlarjun20/Sentiment-Analysis-of-Incoming-Calls-in-Helpdesk"
-          className="text-slate-400 hover:text-purple-400"
+          className="dark:text-slate-400 hover:text-purple-400"
         >
           <Github className="h-5 w-5" />
         </Link>
@@ -225,7 +225,7 @@ export default function Portfolio() {
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Built a model that processes helpdesk call transcripts to classify sentiments as positive, neutral, or negative. This aids customer support teams in understanding caller moods and improving service quality.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -255,12 +255,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Multi-language sentiment classifier
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Built a multilingual sentiment analysis tool to detect polarity in user messages across languages using NLP and translation APIs.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -284,12 +284,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Collaborated on a farmer-focused platform for agricultural data
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Helped build a full-stack platform enabling farmers to access real-time crop insights, market prices, and expert advice, bridging the information gap in agriculture.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -314,12 +314,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Collaborated on the official landing page for Velammal Engineering College
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Worked as a contributor on a clean and accessible landing page for Velammal Engineering College with sections for news, achievements, and departmental links.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -371,12 +371,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Real-time AI surveillance to protect forests
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Used YOLOv8 to detect animals and intruders in thermal and night vision footage, sending instant alerts to forest officers via a dashboard system.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -399,12 +399,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       OCR system for LCD screen character detection
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Trained a YOLO model to identify alphanumeric and special characters on 16x2 LCD screens, designed for real-time embedded applications.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -427,12 +427,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Web app for real-time review sentiment analysis
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Developed an interactive app using Flask and Streamlit to classify and visualize sentiments in user reviews for business insights.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -455,13 +455,13 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Control apps using hand gestures via webcam
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
-      Built a system using Google’s hand gesture recognizer to launch and control Windows applications without physical input.
+    <p className="dark:text-slate-300 mb-4">
+      Built a system using Google's hand gesture recognizer to launch and control Windows applications without physical input.
     </p>
     <div className="flex flex-wrap gap-2">
       <Badge variant="outline" className="text-purple-400 border-purple-400">MediaPipe</Badge>
@@ -483,12 +483,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Smart energy consumption monitoring app
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Built a dashboard that monitors power usage patterns and helps optimize device consumption with actionable insights.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -511,12 +511,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Simple tool to create and export custom invoices
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Designed a web app to input client data and generate PDF invoices dynamically, reducing manual work for freelancers and businesses.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -539,12 +539,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       Logistic regression-based anomaly detection
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
       Implemented a machine learning model to flag fraudulent credit card transactions using logistic regression and data imbalance techniques.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -567,12 +567,12 @@ export default function Portfolio() {
         </Link>
       </div>
     </div>
-    <CardDescription className="text-slate-400">
+    <CardDescription className="dark:text-slate-400">
       All-in-one academic dashboard for students
     </CardDescription>
   </CardHeader>
   <CardContent>
-    <p className="text-slate-300 mb-4">
+    <p className="dark:text-slate-300 mb-4">
     This project is designed to create a platform similar to Google Classroom, integrated with a multimodal assistant. The assistant utilizes Retrieval-Augmented Generation (RAG) to access relevant GitHub repository links and provide YouTube videos based on student study topics. The goal is to enhance the learning experience by facilitating easy access to resources.
     </p>
     <div className="flex flex-wrap gap-2">
@@ -598,24 +598,24 @@ export default function Portfolio() {
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle>Contact Information</CardTitle>
-                <CardDescription className="text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Feel free to reach out for collaborations or just a chat!
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-purple-500" />
-                  <span className="text-slate-300">vlarjun2022@gmail.com</span>
+                  <span className="dark:text-slate-300">vlarjun2022@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-purple-500" />
-                  <Link href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/" className="text-slate-300 hover:text-purple-400">
+                  <Link href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/" className="dark:text-slate-300 hover:text-purple-400">
                   linkedin.com/in/arjun-vanmeeganathan-lakshmi
                   </Link>
                 </div>
                 <div className="flex items-center gap-3">
                   <Github className="h-5 w-5 text-purple-500" />
-                  <Link href="https://github.com/vlarjun20" className="text-slate-300 hover:text-purple-400">
+                  <Link href="https://github.com/vlarjun20" className="dark:text-slate-300 hover:text-purple-400">
                   github.com/vlarjun20
                   </Link>
                 </div>
@@ -625,7 +625,7 @@ export default function Portfolio() {
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle>Send Me a Message</CardTitle>
-                <CardDescription className="text-slate-400">I'll get back to you as soon as possible.</CardDescription>
+                <CardDescription className="dark:text-slate-400">I'll get back to you as soon as possible.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ContactForm />
@@ -638,15 +638,15 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-slate-400">© 2025 Arjun V L. All rights reserved.</p>
+          <p className="dark:text-slate-400">© 2025 Arjun V L. All rights reserved.</p>
           <div className="flex justify-center gap-4 mt-4">
-            <Link href="https://github.com/vlarjun20" className="text-slate-400 hover:text-purple-400">
+            <Link href="https://github.com/vlarjun20" className="dark:text-slate-400 hover:text-purple-400">
               <Github className="h-5 w-5" />
             </Link>
-            <Link href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/" className="text-slate-400 hover:text-purple-400">
+            <Link href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/" className="dark:text-slate-400 hover:text-purple-400">
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link href="mailto:vlarjun2022@gmail.com" className="text-slate-400 hover:text-purple-400">
+            <Link href="mailto:vlarjun2022@gmail.com" className="dark:text-slate-400 hover:text-purple-400">
               <Mail className="h-5 w-5" />
             </Link>
           </div>
