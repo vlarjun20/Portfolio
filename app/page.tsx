@@ -250,7 +250,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Sentimatrix</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/Siddharth-magesh/Sentimatrix" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/Siddharth-magesh/Sentimatrix" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -279,7 +279,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Agri-Hub</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/Siddharth-magesh/Agri-Hub" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/Siddharth-magesh/Agri-Hub" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -309,7 +309,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>VEC Website</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/SAMSDP/VEC_Landing" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/SAMSDP/VEC_Landing" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -366,7 +366,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>AI-based Wildlife Conservation Tool</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/AI-based-Wildlife-Conservation-Tool" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/AI-based-Wildlife-Conservation-Tool" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -394,7 +394,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Digital Character Recognition</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/-Digital-Character-Recognition" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/-Digital-Character-Recognition" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -422,7 +422,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Sentiment Analysis of Product Reviews</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/Sentiment-Analysis-of-Product-Reviews-using-streamlit-and-flask" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/Sentiment-Analysis-of-Product-Reviews-using-streamlit-and-flask" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -450,7 +450,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Gesture-Based App Launcher</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/Accessing-Windows-Applications-by-Hand-gesture-using-Google-s-hand-gesture-recognizer" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/Accessing-Windows-Applications-by-Hand-gesture-using-Google-s-hand-gesture-recognizer" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -478,7 +478,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Power Circle</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/Power-Circle" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/Power-Circle" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -506,7 +506,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Invoice Generator</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/Invoice-Generator" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/Invoice-Generator" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -534,7 +534,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Credit Card Fraud Detection</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/Credit-Card-Fraud-Detection-using-Logistic-Regression" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/Credit-Card-Fraud-Detection-using-Logistic-Regression" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
@@ -562,7 +562,7 @@ export default function Portfolio() {
     <div className="flex justify-between items-start">
       <CardTitle>Learning Hub</CardTitle>
       <div className="flex gap-2">
-        <Link href="https://github.com/vlarjun20/Learning-Hub" className="text-slate-400 hover:text-purple-400">
+        <Link href="https://github.com/vlarjun20/Learning-Hub" className="dark:text-slate-400 hover:text-purple-400">
           <Github className="h-5 w-5" />
         </Link>
       </div>
