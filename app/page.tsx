@@ -21,7 +21,7 @@ export default function Portfolio() {
         <nav className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Brain className="h-6 w-6 text-purple-500" />
-            <span className="font-bold text-xl">Arjun V L</span>
+            <span className="font-bold text-xl">AVL</span>
           </div>
           <div className="hidden md:flex gap-6">
             <Link href="#about" className="hover:text-purple-400 transition-colors">
@@ -53,7 +53,7 @@ export default function Portfolio() {
           <TechPattern className="opacity-10" />
           <div className="relative mb-8">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-purple-500">
-              <img src="/IMG_1077.jpg?height=128&width=128" alt="Arjun v l" className="object-cover" />
+              <img src="/profile/IMG_1077.jpg?height=128&width=128" alt="Arjun v l" className="object-cover" />
             </div>
             <div className="absolute -bottom-2 -right-2 bg-purple-500 rounded-full p-2">
               <Sparkles className="h-5 w-5 text-white" />

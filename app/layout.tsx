@@ -14,6 +14,9 @@ export const metadata = {
     { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
     { media: "(prefers-color-scheme: dark)", color: "#020617" },
   ],
+  icons: {
+    icon: "/profile/Icon.png",
+  },
 }
 
 export default function RootLayout({
