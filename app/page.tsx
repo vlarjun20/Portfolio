@@ -103,7 +103,7 @@ export default function Portfolio() {
                 open-source projects, or exploring the latest developments in the AI community.
               </p>
             </div>
-            <div className="md:w-1/2 bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+            <div className="md:w-1/2 dark:bg-slate-800/50 rounded-xl p-6 border border-slate-700">
               <h3 className="text-xl font-semibold mb-4">Education</h3>
               <div className="mb-6">
                 <div className="flex justify-between mb-1">
