@@ -133,6 +133,38 @@ export default function Portfolio() {
           </div>
         </section>
 
+  <div className="md:w-full dark:bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+  <h3 className="text-xl font-semibold mb-4">Co-curricular Activities</h3>
+
+  <div className="flex flex-col md:flex-row gap-6 mb-6">
+    {/* HACKATHON Section */}
+    <div className="md:w-1/2">
+      <div className="flex justify-between mb-1">
+        <span className="font-medium">Hackathon</span>
+      </div>
+      <ul className="list-disc list-inside text-sm dark:text-slate-100">
+        <li>Participated in “SMARTHACKS’24”, Anurag University, Hyderabad – 21st June 2024</li>
+        <li>Participated in “NIRAL THIRUVIZHA”, Anna University, Guindy – 28th June 2024</li>
+        <li>Won 1st place in “INNOTHON’24”, KCG Engineering College, Chennai – 21st September 2024</li>
+        <li>Participated in “INTEL GEN AI’24”, KPR Institute of Engineering and Technology, Coimbatore – 4th October 2024</li>
+        <li>Participated in “HACKVERSE 5.0’24”, NITK, Surathkal – 12th October 2025</li>
+      </ul>
+    </div>
+
+    {/* SYMPOSIUM Section */}
+    <div className="md:w-1/2">
+      <div className="flex justify-between mb-1">
+        <span className="font-medium">Symposium</span>
+      </div>
+      <ul className="list-disc list-inside text-sm dark:text-slate-100">
+        <li>Participated in “UBERTECH”, SRMIST, Chennai – 12th October 2023</li>
+        <li>Participated in “ELECTROWIZ”, Velammal Engineering College, Chennai – 25th January 2024</li>
+        <li>Participated in “KURUKSHETRA’24”, Anna University, Chennai – 28th February 2024</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
         {/* Skills Section */}
         <section id="skills" className="py-16">
           <div className="flex items-center gap-2 mb-8">
