@@ -121,7 +121,7 @@ export function ContactForm() {
           className="w-full px-3 py-2 dark:bg-slate-700 border border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
         ></textarea>
       </div>
-      <Button type="submit" className="w-full bg-purple-600 hover:bg-purple-700" disabled={isSubmitting}>
+      <Button type="submit" className="w-full bg-cyan-600 hover:bg-cyan-700" disabled={isSubmitting}>
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
     </form>
