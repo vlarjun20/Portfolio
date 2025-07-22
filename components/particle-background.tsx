@@ -45,8 +45,8 @@ export function ParticleBackground() {
           speedY: (Math.random() - 0.5) * 0.5,
           color:
             theme === "dark"
-              ? `rgba(${Math.floor(Math.random() * 100 + 100)}, ${Math.floor(Math.random() * 50 + 50)}, ${Math.floor(Math.random() * 200 + 55)}, ${Math.random() * 0.5 + 0.1})`
-              : `rgba(${Math.floor(Math.random() * 100 + 50)}, ${Math.floor(Math.random() * 50 + 50)}, ${Math.floor(Math.random() * 200 + 55)}, ${Math.random() * 0.3 + 0.1})`,
+              ? `rgba(${Math.floor(Math.random() * 100 + 100)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.random() * 0.5 + 0.1})`
+              : `rgba(${Math.floor(Math.random() * 100 + 50)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.random() * 0.3 + 0.1})`,
         })
       }
     }
@@ -86,8 +86,8 @@ export function ParticleBackground() {
             ctx.beginPath()
             ctx.strokeStyle =
               theme === "dark"
-                ? `rgba(150, 100, 255, ${0.1 * (1 - distance / 100)})`
-                : `rgba(100, 50, 200, ${0.1 * (1 - distance / 100)})`
+                ? `rgba(100, 200, 255, ${0.1 * (1 - distance / 100)})`
+                : `rgba(50, 150, 200, ${0.1 * (1 - distance / 100)})`
             ctx.lineWidth = 0.5
             ctx.moveTo(particle.x, particle.y)
             ctx.lineTo(otherParticle.x, otherParticle.y)

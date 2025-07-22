@@ -65,7 +65,7 @@ export function FloatingIcons() {
             opacity: 0.15,
           }}
         >
-          <icon.Icon size={icon.size * 24} className={theme === "dark" ? "text-purple-400" : "text-purple-600"} />
+          <icon.Icon size={icon.size * 24} className={theme === "dark" ? "text-cyan-400" : "text-cyan-600"} />
         </div>
       ))}
     </div>
