@@ -207,16 +207,16 @@ export default function Portfolio() {
 
               <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
                 <CardHeader>
-                  <CardTitle>Web & Cloud</CardTitle>
+                  <CardTitle>Tools & Technologies</CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-2">
-                  <Badge className="bg-teal-600">HTML</Badge>
-                  <Badge className="bg-teal-600">CSS</Badge>
+                  <Badge className="bg-teal-600">Git</Badge>
+                  <Badge className="bg-teal-600">Github</Badge>
                   {/* <Badge className="bg-teal-600">Node.js</Badge> */}
                   <Badge className="bg-teal-600">AWS</Badge>
                   <Badge className="bg-teal-600">Google Cloud</Badge>
-                  {/* <Badge className="bg-teal-600">Docker</Badge>
-                  <Badge className="bg-teal-600">Kubernetes</Badge> */}
+                   <Badge className="bg-teal-600">Docker</Badge>
+                 {/* <Badge className="bg-teal-600">Kubernetes</Badge> */}
                 </CardContent>
               </Card>
             </div>
