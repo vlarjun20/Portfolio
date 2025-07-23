@@ -193,9 +193,9 @@ cv2.imwrite('output.jpg', result_img)`,
   if (!mounted) return null
 
   return (
-    <div className="fixed top-20 right-4 max-w-xs lg:max-w-md xl:max-w-lg opacity-15 lg:opacity-20 pointer-events-none hidden lg:block z-0">
+    <div className="fixed top-20 right-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg opacity-10 sm:opacity-15 lg:opacity-20 pointer-events-none block z-0">
       <div
-        className="rounded-lg border p-4 shadow-2xl font-mono text-xs whitespace-pre-wrap leading-relaxed max-h-96 overflow-hidden"
+        className="rounded-lg border p-2 sm:p-3 lg:p-4 shadow-2xl font-mono text-xs sm:text-xs lg:text-xs whitespace-pre-wrap leading-relaxed max-h-64 sm:max-h-80 lg:max-h-96 overflow-hidden"
         style={{
           backgroundColor: currentTheme === "dark" ? "rgba(0,0,0,.9)" : "rgba(255,255,255,.95)",
           borderColor: currentTheme === "dark" ? "rgba(6,182,212,.5)" : "rgba(6,182,212,.4)",
@@ -204,11 +204,11 @@ cv2.imwrite('output.jpg', result_img)`,
           boxShadow: currentTheme === "dark" ? "0 0 20px rgba(6,182,212,.2)" : "0 10px 25px rgba(0,0,0,.1)",
         }}
       >
-        <div className="flex items-center gap-2 mb-2 pb-2 border-b border-current/20">
-          <div className="w-2 h-2 rounded-full bg-red-500"></div>
-          <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-          <div className="w-2 h-2 rounded-full bg-green-500"></div>
-          <span className="ml-2 text-xs opacity-60">ai_model.py</span>
+        <div className="flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2 pb-1 sm:pb-2 border-b border-current/20">
+          <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-red-500"></div>
+          <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-yellow-500"></div>
+          <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-500"></div>
+          <span className="ml-1 sm:ml-2 text-xs opacity-60">ai_model.py</span>
         </div>
         {text}
         <span className="animate-pulse text-cyan-400">|</span>

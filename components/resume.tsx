@@ -10,7 +10,7 @@ interface ResumeButtonProps {
   className?: string
 }
 
-export function ResumeButton({ resumePath = "/resume/arjun-resume.pdf", className = "" }: ResumeButtonProps) {
+export function ResumeButton({ resumePath = "/resume/arjun_resume.pdf", className = "" }: ResumeButtonProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
