@@ -1,22 +1,29 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { useTheme } from "next-themes"
 
-interface Particle {
+interface CodeDrop {
   x: number
   y: number
-  size: number
-  speedX: number
-  speedY: number
+  speed: number
+  char: string
+  opacity: number
   color: string
+  fontSize: number
 }
 
 export function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const { theme } = useTheme()
+  const { theme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  // Determine the current theme, with proper fallback
+  const currentTheme = mounted ? (theme === "system" ? resolvedTheme : theme) : "dark"
 
   useEffect(() => {
+    setMounted(true)
+
     const canvas = canvasRef.current
     if (!canvas) return
 
@@ -24,95 +31,218 @@ export function ParticleBackground() {
     if (!ctx) return
 
     let animationFrameId: number
-    let particles: Particle[] = []
+    let drops: CodeDrop[] = []
+
+    // AI/ML specific code characters and keywords
+    const aiCodeChars = [
+      // Python ML keywords
+      "import",
+      "tensorflow",
+      "pytorch",
+      "sklearn",
+      "numpy",
+      "pandas",
+      "model",
+      "train",
+      "predict",
+      "fit",
+      "transform",
+      "accuracy",
+      "neural",
+      "network",
+      "deep",
+      "learning",
+      "ai",
+      "ml",
+      "conv2d",
+      "dense",
+      "lstm",
+      "gru",
+      "attention",
+      "transformer",
+      "relu",
+      "sigmoid",
+      "softmax",
+      "adam",
+      "sgd",
+      "rmsprop",
+      "loss",
+      "optimizer",
+      "epoch",
+      "batch",
+      "gradient",
+      "backprop",
+
+      // Code symbols and operators
+      "def",
+      "class",
+      "if",
+      "else",
+      "for",
+      "while",
+      "return",
+      "import",
+      "from",
+      "as",
+      "with",
+      "try",
+      "except",
+      "==",
+      "!=",
+      "<=",
+      ">=",
+      "->",
+      "lambda",
+      "yield",
+
+      // Mathematical symbols
+      "∑",
+      "∆",
+      "∇",
+      "∂",
+      "∞",
+      "α",
+      "β",
+      "γ",
+      "θ",
+      "λ",
+      "μ",
+      "σ",
+
+      // Numbers and brackets
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "(",
+      ")",
+      "[",
+      "]",
+      "{",
+      "}",
+      "<",
+      ">",
+      "/",
+      "*",
+      "+",
+      "-",
+      "=",
+
+      // AI model names and concepts
+      "GPT",
+      "BERT",
+      "CNN",
+      "RNN",
+      "GAN",
+      "VAE",
+      "SVM",
+      "KNN",
+      "ResNet",
+      "VGG",
+      "YOLO",
+      "R-CNN",
+      "U-Net",
+      "AlexNet",
+    ]
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
-      initParticles()
+      initDrops()
     }
 
-    const initParticles = () => {
-      particles = []
-      const particleCount = Math.min(Math.floor(window.innerWidth / 10), 100)
+    const initDrops = () => {
+      drops = []
+      const dropCount = Math.floor(canvas.width / 25)
 
-      for (let i = 0; i < particleCount; i++) {
-        particles.push({
-          x: Math.random() * canvas.width,
+      for (let i = 0; i < dropCount; i++) {
+        drops.push({
+          x: i * 25 + Math.random() * 10,
           y: Math.random() * canvas.height,
-          size: Math.random() * 2 + 0.5,
-          speedX: (Math.random() - 0.5) * 0.5,
-          speedY: (Math.random() - 0.5) * 0.5,
+          speed: Math.random() * 2 + 0.5,
+          char: aiCodeChars[Math.floor(Math.random() * aiCodeChars.length)],
+          opacity: Math.random() * 0.8 + 0.2,
+          fontSize: Math.random() * 8 + 10,
           color:
-            theme === "dark"
-              ? `rgba(${Math.floor(Math.random() * 100 + 100)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.random() * 0.5 + 0.1})`
-              : `rgba(${Math.floor(Math.random() * 100 + 50)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.floor(Math.random() * 200 + 155)}, ${Math.random() * 0.3 + 0.1})`,
+            currentTheme === "dark"
+              ? `rgba(34, 211, 238, ${Math.random() * 0.8 + 0.2})`
+              : `rgba(8, 145, 178, ${Math.random() * 0.6 + 0.2})`,
         })
       }
     }
 
-    const drawParticles = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+    const drawDrops = () => {
+      // Create trailing effect with more transparency for smoother look
+      ctx.fillStyle = currentTheme === "dark" ? "rgba(2, 6, 23, 0.03)" : "rgba(248, 250, 252, 0.03)"
+      ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      particles.forEach((particle, i) => {
+      drops.forEach((drop, i) => {
         // Update position
-        particle.x += particle.speedX
-        particle.y += particle.speedY
+        drop.y += drop.speed
 
-        // Bounce off edges
-        if (particle.x < 0 || particle.x > canvas.width) {
-          particle.speedX *= -1
+        // Reset drop when it goes off screen
+        if (drop.y > canvas.height + 50) {
+          drop.y = -50
+          drop.char = aiCodeChars[Math.floor(Math.random() * aiCodeChars.length)]
+          drop.opacity = Math.random() * 0.8 + 0.2
+          drop.fontSize = Math.random() * 8 + 10
+          drop.speed = Math.random() * 2 + 0.5
         }
 
-        if (particle.y < 0 || particle.y > canvas.height) {
-          particle.speedY *= -1
+        // Draw character with glow effect
+        ctx.font = `${drop.fontSize}px "Fira Code", "JetBrains Mono", "Courier New", monospace`
+        ctx.fillStyle = drop.color
+        ctx.globalAlpha = drop.opacity
+
+        // Add glow effect for dark theme
+        if (currentTheme === "dark") {
+          ctx.shadowColor = "#22d3ee"
+          ctx.shadowBlur = 3
+        } else {
+          ctx.shadowBlur = 0
         }
 
-        // Draw particle
-        ctx.beginPath()
-        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-        ctx.fillStyle = particle.color
-        ctx.fill()
+        ctx.fillText(drop.char, drop.x, drop.y)
 
-        // Draw connections
-        particles.forEach((otherParticle, j) => {
-          if (i === j) return
+        // Occasionally change character (less frequent for readability)
+        if (Math.random() < 0.005) {
+          drop.char = aiCodeChars[Math.floor(Math.random() * aiCodeChars.length)]
+        }
 
-          const dx = particle.x - otherParticle.x
-          const dy = particle.y - otherParticle.y
-          const distance = Math.sqrt(dx * dx + dy * dy)
-
-          if (distance < 100) {
-            ctx.beginPath()
-            ctx.strokeStyle =
-              theme === "dark"
-                ? `rgba(100, 200, 255, ${0.1 * (1 - distance / 100)})`
-                : `rgba(50, 150, 200, ${0.1 * (1 - distance / 100)})`
-            ctx.lineWidth = 0.5
-            ctx.moveTo(particle.x, particle.y)
-            ctx.lineTo(otherParticle.x, otherParticle.y)
-            ctx.stroke()
-          }
-        })
+        // Add slight horizontal drift
+        drop.x += Math.sin(drop.y * 0.01) * 0.1
       })
 
-      animationFrameId = requestAnimationFrame(drawParticles)
+      ctx.globalAlpha = 1
+      ctx.shadowBlur = 0
+      animationFrameId = requestAnimationFrame(drawDrops)
     }
 
     window.addEventListener("resize", resizeCanvas)
     resizeCanvas()
-    drawParticles()
+    drawDrops()
 
     return () => {
       window.removeEventListener("resize", resizeCanvas)
       cancelAnimationFrame(animationFrameId)
     }
-  }, [theme])
+  }, [currentTheme, mounted])
+
+  // Return an empty canvas initially to avoid hydration mismatch
+  if (!mounted) {
+    return <canvas className="fixed top-0 left-0 w-full h-full -z-10 opacity-0" />
+  }
 
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10 opacity-60"
+      className="fixed top-0 left-0 w-full h-full -z-10 opacity-25"
       style={{ pointerEvents: "none" }}
     />
   )

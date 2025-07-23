@@ -10,12 +10,16 @@ import { AnimatedGradient } from "@/components/animated-gradient"
 import { TechPattern } from "@/components/tech-pattern"
 import { ContactForm } from "@/components/Contact-Form"
 import { ResumeButton } from "@/components/resume"
+import { AutoTypingCode } from "@/components/auto-typing-code"
+import { AIModelDemo } from "@/components/ai-model"
 
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 text-slate-800 dark:text-slate-100 relative overflow-hidden">
       <ParticleBackground />
       <FloatingIcons />
+      <AutoTypingCode />
+
       {/* Navigation */}
       <header className="container mx-auto py-6 relative z-10">
         <nav className="flex justify-between items-center">
@@ -23,7 +27,7 @@ export default function Portfolio() {
             <Brain className="h-6 w-6 text-cyan-500" />
             <span className="font-bold text-xl">AVL</span>
           </div>
-          <div className="hidden md:flex gap-6">
+          <div className="hidden md:flex gap-6 ">
             <Link href="#about" className="hover:text-cyan-400 transition-colors">
               About
             </Link>
@@ -61,7 +65,7 @@ export default function Portfolio() {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Arjun V L</h1>
           <h2 className="text-2xl md:text-3xl text-cyan-400 mb-6">AI Developer</h2>
-          <p className="max-w-2xl text-slate-700 dark:text-slate-300 mb-8">
+          <p className="max-w-2xl dark:text-slate-300 mb-8">
             Computer Science student specializing in artificial intelligence, machine learning, and natural language
             processing. Passionate about building intelligent systems that solve real-world problems.
           </p>
@@ -87,45 +91,47 @@ export default function Portfolio() {
                 <User className="h-6 w-6 text-cyan-500" />
                 <h2 className="text-3xl font-bold">About Me</h2>
               </div>
-              <p className="text-slate-700 dark:text-slate-300 mb-4">
+              <p className="dark:text-slate-300 mb-4">
                 I'm a final-year Computer Science student at Velammal Engineering College, specializing in Artificial
                 Intelligence and Deep Learning. My academic journey has been focused on developing intelligent systems
                 that can understand, learn, and adapt.
               </p>
-              <p className="text-slate-700 dark:text-slate-300 mb-4">
+              <p className="dark:text-slate-300 mb-4">
                 During my studies, I've had the opportunity to work on various projects in natural language processing,
                 computer vision, and reinforcement learning. I'm particularly interested in the intersection of AI and
                 healthcare, where I believe technology can make a significant positive impact.
               </p>
-              <p className="text-slate-700 dark:text-slate-300">
+              <p className="dark:text-slate-300">
                 When I'm not coding or researching, you can find me participating in hackathons, contributing to
                 open-source projects, or exploring the latest developments in the AI community.
               </p>
             </div>
-            <div className="md:w-1/2 bg-slate-100/80 dark:bg-slate-800/50 rounded-xl p-6 border border-slate-300 dark:border-slate-700">
-              <h3 className="text-xl font-semibold mb-4">Education</h3>
-              <div className="mb-6">
-                <div className="flex justify-between mb-1">
-                  <span className="font-medium">Velammal Engineering College</span>
-                  <span className="text-cyan-400">2022 - 2026</span>
+            <div className="md:w-1/2 space-y-6">
+              <div className="dark:bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+                <h3 className="text-xl font-semibold mb-4">Education</h3>
+                <div className="mb-6">
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">Velammal Engineering College</span>
+                    <span className="text-cyan-400">2022 - 2026</span>
+                  </div>
+                  <p className="text-sm dark:text-slate-400">B.tech in Artificial Intelligence and Data Science</p>
                 </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  B.tech in Artificial Intelligence and Data Science
-                </p>
-              </div>
-
-              <h3 className="text-xl font-semibold mb-4">Experience</h3>
-              <div className="mb-4">
-                <div className="flex justify-between mb-1">
-                  <span className="font-medium">ML & Robotics Intern</span>
-                  <span className="text-cyan-400">December 2024</span>
+                <h3 className="text-xl font-semibold mb-4">Experience</h3>
+                <div className="mb-4">
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">ML & Robotics Intern</span>
+                    <span className="text-cyan-400">December 2024</span>
+                  </div>
+                  <p className="text-sm dark:text-slate-400">Atlanwa, Chennai</p>
                 </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400">Atlanwa, Chennai</p>
               </div>
             </div>
           </div>
+        </section>
 
+      
        {/* Co-curricular Activities Section */}
+       <section>
           <div className="mt-12">
             <div className="bg-slate-100/80 dark:bg-slate-800/50 rounded-xl p-6 border border-slate-300 dark:border-slate-700">
               <div className="flex items-center gap-2 mb-6">
@@ -249,14 +255,12 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-
         {/* Skills Section */}
         <section id="skills" className="py-16">
           <div className="flex items-center gap-2 mb-8">
             <Code className="h-6 w-6 text-cyan-500" />
             <h2 className="text-3xl font-bold">Skills & Technologies</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
               <CardHeader>
@@ -274,7 +278,6 @@ export default function Portfolio() {
                 <Badge className="bg-cyan-600">Reinforcement Learning</Badge>
               </CardContent>
             </Card>
-
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle>Programming Languages & Databases</CardTitle>
@@ -288,7 +291,6 @@ export default function Portfolio() {
                 <Badge className="bg-blue-600">MongoDB</Badge>
               </CardContent>
             </Card>
-
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle>Tools & Technologies</CardTitle>
@@ -304,13 +306,21 @@ export default function Portfolio() {
           </div>
         </section>
 
+        {/* AI Model Training Demo Section */}
+        <section className="py-16">
+          <div className="flex justify-center">
+            <div className="max-w-md w-full">
+              <AIModelDemo />
+            </div>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projects" className="py-16">
           <div className="flex items-center gap-2 mb-8">
             <Sparkles className="h-6 w-6 text-cyan-500" />
             <h2 className="text-3xl font-bold">Featured Projects</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 overflow-hidden">
               <div className="h-48 overflow-hidden">
@@ -326,18 +336,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/Sentiment-Analysis-of-Incoming-Calls-in-Helpdesk"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="text-slate-400">
                   NLP-powered system for analyzing call center sentiment
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Built a model that processes helpdesk call transcripts to classify sentiments as positive, neutral, or
                   negative. This aids customer support teams in understanding caller moods and improving service
                   quality.
@@ -366,18 +376,16 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/Siddharth-magesh/Sentimatrix"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
-                  Multi-language sentiment classifier
-                </CardDescription>
+                <CardDescription className="dark:text-slate-400">Multi-language sentiment classifier</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Built a multilingual sentiment analysis tool to detect polarity in user messages across languages
                   using NLP and translation APIs.
                 </p>
@@ -405,18 +413,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/Siddharth-magesh/Agri-Hub"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Collaborated on a farmer-focused platform for agricultural data
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Helped build a full-stack platform enabling farmers to access real-time crop insights, market prices,
                   and expert advice, bridging the information gap in agriculture.
                 </p>
@@ -440,22 +448,22 @@ export default function Portfolio() {
               </div>
               <CardHeader>
                 <div className="flex justify-between items-start">
-                  <CardTitle>VEC Website</CardTitle>
+                  <CardTitle>Velammal Engineering College Website</CardTitle>
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/SAMSDP/VEC_Landing"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Collaborated on the official landing page for Velammal Engineering College
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Worked as a contributor on a clean and accessible landing page for Velammal Engineering College with
                   sections for news, achievements, and departmental links.
                 </p>
@@ -483,18 +491,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/AI-based-Wildlife-Conservation-Tool"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Real-time AI surveillance to protect forests
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Used YOLOv8 to detect animals and intruders in thermal and night vision footage, sending instant
                   alerts to forest officers via a dashboard system.
                 </p>
@@ -522,18 +530,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/-Digital-Character-Recognition"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   OCR system for LCD screen character detection
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Trained a YOLO model to identify alphanumeric and special characters on 16x2 LCD screens, designed for
                   real-time embedded applications.
                 </p>
@@ -561,18 +569,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/Sentiment-Analysis-of-Product-Reviews-using-streamlit-and-flask"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Web app for real-time review sentiment analysis
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Developed an interactive app using Flask and Streamlit to classify and visualize sentiments in user
                   reviews for business insights.
                 </p>
@@ -600,18 +608,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/Accessing-Windows-Applications-by-Hand-gesture-using-Google-s-hand-gesture-recognizer"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Control apps using hand gestures via webcam
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Built a system using Google's hand gesture recognizer to launch and control Windows applications
                   without physical input.
                 </p>
@@ -639,18 +647,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/Power-Circle"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Smart energy consumption monitoring app
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Built a dashboard that monitors power usage patterns and helps optimize device consumption with
                   actionable insights.
                 </p>
@@ -678,18 +686,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/Invoice-Generator"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Simple tool to create and export custom invoices
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Designed a web app to input client data and generate PDF invoices dynamically, reducing manual work
                   for freelancers and businesses.
                 </p>
@@ -717,18 +725,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/Credit-Card-Fraud-Detection-using-Logistic-Regression"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Logistic regression-based anomaly detection
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   Implemented a machine learning model to flag fraudulent credit card transactions using logistic
                   regression and data imbalance techniques.
                 </p>
@@ -756,18 +764,18 @@ export default function Portfolio() {
                   <div className="flex gap-2">
                     <Link
                       href="https://github.com/vlarjun20/Learning-Hub"
-                      className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+                      className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   All-in-one academic dashboard for students
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="dark:text-slate-300 mb-4">
                   This project is designed to create a platform similar to Google Classroom, integrated with a
                   multimodal assistant. The assistant utilizes Retrieval-Augmented Generation (RAG) to access relevant
                   GitHub repository links and provide YouTube videos based on student study topics. The goal is to
@@ -795,45 +803,40 @@ export default function Portfolio() {
             <MessageSquare className="h-6 w-6 text-cyan-500" />
             <h2 className="text-3xl font-bold">Get In Touch</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle>Contact Information</CardTitle>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   Feel free to reach out for collaborations or just a chat!
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-cyan-500" />
-                  <span className="text-slate-700 dark:text-slate-300">vlarjun2022@gmail.com</span>
+                  <span className="dark:text-slate-300">vlarjun2022@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-cyan-500" />
                   <Link
                     href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/"
-                    className="text-slate-700 dark:text-slate-300 hover:text-cyan-400"
+                    className="dark:text-slate-300 hover:text-cyan-400"
                   >
                     linkedin.com/in/arjun-vanmeeganathan-lakshmi
                   </Link>
                 </div>
                 <div className="flex items-center gap-3">
                   <Github className="h-5 w-5 text-cyan-500" />
-                  <Link
-                    href="https://github.com/vlarjun20"
-                    className="text-slate-700 dark:text-slate-300 hover:text-cyan-400"
-                  >
+                  <Link href="https://github.com/vlarjun20" className="dark:text-slate-300 hover:text-cyan-400">
                     github.com/vlarjun20
                   </Link>
                 </div>
               </CardContent>
             </Card>
-
             <Card className="bg-white/80 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle>Send Me a Message</CardTitle>
-                <CardDescription className="text-slate-600 dark:text-slate-400">
+                <CardDescription className="dark:text-slate-400">
                   I'll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
@@ -848,24 +851,18 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-slate-600 dark:text-slate-400">© 2025 Arjun V L. All rights reserved.</p>
+          <p className="dark:text-slate-400">© 2025 Arjun V L. All rights reserved.</p>
           <div className="flex justify-center gap-4 mt-4">
-            <Link
-              href="https://github.com/vlarjun20"
-              className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
-            >
+            <Link href="https://github.com/vlarjun20" className="dark:text-slate-400 hover:text-cyan-400">
               <Github className="h-5 w-5" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/arjun-vanmeeganathan-lakshmi-63b820258/"
-              className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
+              className="dark:text-slate-400 hover:text-cyan-400"
             >
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link
-              href="mailto:vlarjun2022@gmail.com"
-              className="text-slate-600 dark:text-slate-400 hover:text-cyan-400"
-            >
+            <Link href="mailto:vlarjun2022@gmail.com" className="dark:text-slate-400 hover:text-cyan-400">
               <Mail className="h-5 w-5" />
             </Link>
           </div>
