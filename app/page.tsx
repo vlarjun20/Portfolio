@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Brain, Code, Github, Linkedin, Mail, MessageSquare, Sparkles, User } from "lucide-react"
+import { Brain, Code, Github, Linkedin, Mail, MessageSquare, Sparkles, User, ExternalLink } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ParticleBackground } from "@/components/particle-background"
 import { FloatingIcons } from "@/components/floating-icons"
@@ -455,6 +455,9 @@ export default function Portfolio() {
                       className="dark:text-slate-400 hover:text-cyan-400"
                     >
                       <Github className="h-5 w-5" />
+                    </Link>
+                    <Link href="https://velammal.edu.in/" className="text-slate-400 hover:text-purple-400">
+                      <ExternalLink className="h-5 w-5" />
                     </Link>
                   </div>
                 </div>
